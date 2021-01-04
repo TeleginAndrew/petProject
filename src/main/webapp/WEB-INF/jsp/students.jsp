@@ -31,7 +31,7 @@
 <form method="get" action="/student-create">
 <td style="padding-left: 20px">
     <input type="submit" id="button_short_name" value="Создать студента" name="creating"></td></form>
-            <td style="padding-top: 20px"><input type="submit"
+            <td style="padding-top: 20px"><input onclick="modifyStudent()" type="submit"
                                                  value="Модифицировать выбранного студетна..." id="button_long_name"></td>
 
             <td style="padding-left: 20px; padding-top: 20px"><input onclick="deleteStudent()"
@@ -75,6 +75,10 @@
     <input type="hidden" id="deleteStudHidden" name="deleteStudHidden">
 </form>
 
-</div>
+<form action="/student-modify" method="get" id="modifyStudForm">
+    <input type="hidden" id="modifyStudHidden" name="modifyStudHidden">
+</form>
+
+
 
 

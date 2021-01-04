@@ -129,6 +129,38 @@ public class DBManager {
             e.printStackTrace();
         }
     }
+
+    public static void modifyStud(String id, String sername, String name, String group, String date){
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection conn = DriverManager.getConnection(Constants.PATH_TO_DATABASE);
+            Statement stmt = conn.createStatement();
+            stmt.execute("UPDATE `student` SET `sername` = '"+sername+"', `name` = '"+name+"', `group` = '"+group+"', `date` = '"+date+"' WHERE (`id` = '"+id+"');");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static Student getStudentById(String id) {
+        Student student = new Student();
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection conn = DriverManager.getConnection(Constants.PATH_TO_DATABASE);
+            Statement stmt = conn.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT * FROM student WHERE status = '1' AND id = "+id+";");
+
+            while (rs.next()) {
+                student.setId(rs.getInt("id"));
+                student.setSername(rs.getString("sername"));
+                student.setName(rs.getString("name"));
+                student.setGroup(rs.getString("group"));
+                student.setDate(rs.getDate("date"));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return student;
+    }
     }
 
 

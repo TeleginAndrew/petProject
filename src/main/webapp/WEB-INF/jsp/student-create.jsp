@@ -30,20 +30,22 @@
             </c:otherwise>
             </c:choose>
 
+                <input type="hidden" value="${student.id}" name="idStud">
+
 
 <tr>
     <td width="60px">Фамилия</td>
     <td style="padding-left: 30px"><input type="text" name="newSername"
-                                          maxlength="50" size="35" class="text"></td>
+                                          maxlength="50" size="35" class="text" value="${student.sername}"></td>
     <td width="60px">Имя</td>
     <td style="padding-left: 30px"><input type="text" name="newName"
-                                          maxlength="50" size="35" class="text" ></td>
+                                          maxlength="50" size="35" class="text" value="${student.name}" ></td>
     <td width="60px">Группа</td>
     <td style="padding-left: 30px"><input type="text" name="newGroup"
-                                          maxlength="50" size="35" class="text" ></td>
+                                          maxlength="50" size="35" class="text" value="${student.group}" ></td>
     <td width="60px">Дата поступления</td>
     <td style="padding-left: 30px"><input type="text" name = "newDate"
-                                          maxlength="50" size="35" class="text"></td>
+                                          maxlength="50" size="35" class="text" value="${student.date}"></td>
 </tr>
 
 <input type="submit" value="Создать">

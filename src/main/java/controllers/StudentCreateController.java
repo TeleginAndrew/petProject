@@ -14,6 +14,7 @@ import java.sql.Date;
 public class StudentCreateController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setAttribute("isCreate", 1);
         req.setAttribute("currentPage", "student-create.jsp");
         req.getRequestDispatcher("WEB-INF/jsp/template.jsp").forward(req, resp);
     }
