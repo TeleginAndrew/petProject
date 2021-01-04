@@ -55,7 +55,7 @@ function modifyDiscipline() {
 function deleteStudent() {
     var items = $("input[type=checkbox]:checked");
     if (items.length == 0) {
-        alert("Выберите хотя бы одного студента");
+        alert("Выберите хотя бы одного студента!");
         return;
     }
 
