@@ -12,7 +12,7 @@
                     href="/students">Студенты</a></td>
             <td align="center"><a href="/disciplines">Дисциплины</a></td>
             <td align="center"><a href="">Внести оценки</a></td>
-            <td align="right"><a href="">Семестры</a></td>
+            <td align="right"><a href="/term">Семестры</a></td>
         </tr>
     </table>
 </div>

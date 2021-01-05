@@ -19,6 +19,7 @@
     <jsp:include page="${currentPage}" flush = "true" />
 </section>
 
+
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 </body>
 </html>

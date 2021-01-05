@@ -38,9 +38,6 @@ public class DBManager {
             Connection conn = DriverManager.getConnection(Constants.PATH_TO_DATABASE);
             Statement stmt = conn.createStatement();
             stmt.execute("INSERT INTO `students_15`.`student` (`sername`, `name`, `group`, `date`) VALUES ('"+sername+"', '"+name+"', '"+group+"', '"+date+"');");
-            System.out.println("hello");
-
-
 
         } catch (Exception e) {
             e.printStackTrace();
