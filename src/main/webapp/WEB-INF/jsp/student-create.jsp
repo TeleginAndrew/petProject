@@ -47,8 +47,14 @@
     <td style="padding-left: 30px"><input type="text" name = "newDate"
                                           maxlength="50" size="35" class="text" value="${student.date}"></td>
 </tr>
-
-<input type="submit" value="Создать">
+                <c:choose>
+                <c:when test="${isCreate == 1}">
+                    <input type="submit" value="Создать" id="button">
+                </c:when>
+                <c:otherwise>
+                    <input type="submit" value="Применить" id="button">
+                </c:otherwise>
+                </c:choose>
 </form>
 </body>
 </html>
