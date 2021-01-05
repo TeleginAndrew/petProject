@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: User
-  Date: 04.12.2020
-  Time: 18:43
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page isELIgnored="false" %>
@@ -26,7 +20,7 @@
     <table>
         <tr>
             <td>
-                <input type="button" id="button_long_name" name="progress"
+                <input onclick="perfomanceStudent()" type="submit" id="button_long_name" name="progress"
                        value="Просмотреть успеваемость выбранного студента"></td>
 <form method="get" action="/student-create">
 <td style="padding-left: 20px">
@@ -77,6 +71,10 @@
 
 <form action="/student-modify" method="get" id="modifyStudForm">
     <input type="hidden" id="modifyStudHidden" name="modifyStudHidden">
+</form>
+
+<form action="/student-perfomance" method="get" id="perfomanceStudForm">
+    <input type="hidden" id="perfomanceStudHidden" name="perfomanceStudHidden">
 </form>
 
 
