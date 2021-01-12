@@ -6,7 +6,7 @@
 <div class="link_container">
     <table>
         <tr>
-            <td><a href="">На
+            <td><a href="/home">На
                 главную</a></td>
             <td><a href="">Назад</a></td>
         </tr>

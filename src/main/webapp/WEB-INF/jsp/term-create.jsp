@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -8,7 +7,7 @@
 <div class="link_container">
     <table>
         <tr>
-            <td><a href="">На
+            <td><a href="/home">На
                 главную</a></td>
             <td><a href="">Назад</a></td>
         </tr>
@@ -25,9 +24,6 @@
     </div>
 
 
-
-
-
     <table class="under_main_table" style="font-family: cursive;">
         <tr>
             <td width="210px">Длительность (в неделях)</td>
@@ -41,7 +37,7 @@
                 <table>
                     <tr>
                         <td style="padding: 0"><select multiple size="8"
-                                                       id="multi_list" multiple="multiple" >
+                                                       id="multi_list" multiple="multiple">
 
                             <option>ЛФЫТВ</option>
 
@@ -50,8 +46,9 @@
 
                     <tr>
                         <td style="padding-top: 20px">
-
+                            <form action="/term" method="post">
                             <input type="submit" value="Создать" id="button">
+                            </form>
                         </td>
                     </tr>
                 </table>

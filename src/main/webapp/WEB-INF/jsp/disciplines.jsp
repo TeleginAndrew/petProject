@@ -5,7 +5,7 @@
 <div class="link_container">
     <table>
         <tr>
-            <td><a href="">На главную</a></td>
+            <td><a href="/home">На главную</a></td>
         </tr>
     </table>
 </div>
@@ -26,7 +26,7 @@
                     </tr>
 
 
-                    <c:forEach items="${disciplines}" var="d">
+                    <c:forEach items="${ disciplines}" var="d">
                     <tr>
                         <td align="right"><input type="checkbox" value="${d.id}"></td>
                         <td align="left">${d.discipline}</td>
@@ -34,7 +34,7 @@
                     </c:forEach>
                 </table>
             </td>
-
+<c:if test="${idRole ==1}">
             <td valign="top" align="left" style="padding: 0">
                 <table cellspacing="0">
 
@@ -61,6 +61,7 @@
                 </table>
             </td>
         </tr>
+        </c:if>
     </table>
 
 </div>

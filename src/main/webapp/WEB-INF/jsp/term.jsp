@@ -10,7 +10,7 @@
 <div class="link_container">
     <table>
         <tr>
-            <td><a href="">На
+            <td><a href="/home">На
                 главную</a></td>
         </tr>
     </table>
@@ -42,15 +42,22 @@
         <tr>
             <td style="padding: 0" width="450px"><table cellspacing="0"
                                                         cellpadding="3" id="small_font_100_380" border="1px">
+
                 <tr bgcolor="#DCDCDC" align="left" style="border-color: #8B8989;">
                     <th>Наименование дисциплины</th>
                 </tr>
-                <tr>
-                    <td>ЛВФТАЛ</td>
-                </tr>
-            </table></td>
+                    <c:forEach items="" var="t">
+                        <tr>
+                            <td align="right"><input type="checkbox" value=""></td>
+                            <td align="left"></td>
+                        </tr>
+                    </c:forEach>
 
-            <td align="left" valign="top" style="padding: 0">
+                </td>
+            </table>
+
+<c:if test="${idRole ==1}">
+    <td align="left" valign="top" style="padding: 0">
 
 						<table cellspacing="0">
 
@@ -73,6 +80,7 @@
                 </tr>
             </table>
             </td>
+    </c:if>
     </table>
 </div>
 </body>

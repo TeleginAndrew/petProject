@@ -10,7 +10,7 @@
 <div class="link_container">
     <table>
         <tr>
-            <td><a href="">На главную</a></td>
+            <td><a href="/home">На главную</a></td>
         </tr>
     </table>
 </div>
@@ -22,6 +22,7 @@
             <td>
                 <input onclick="perfomanceStudent()" type="submit" id="button_long_name" name="progress"
                        value="Просмотреть успеваемость выбранного студента"></td>
+<c:if test="${idRole ==1}">
 <form method="get" action="/student-create">
 <td style="padding-left: 20px">
     <input type="submit" id="button_short_name" value="Создать студента" name="creating"></td></form>
@@ -30,6 +31,7 @@
 
             <td style="padding-left: 20px; padding-top: 20px"><input onclick="deleteStudent()"
                     type="submit" value="Удалить выбранных студентов" id="button_short_name"></td>
+    </c:if>
         </tr>
     </table>
 <table style="margin-top: 30px" width="100%">
